@@ -1,0 +1,15 @@
+doctype html
+head
+  title NerdLuv
+  meta(charset='utf-8')
+  link(href='/images/heart.gif' type='image/gif' rel='shortcut icon')
+  link(href='css/nerdluv.css' type='text/css' rel='stylesheet')
+include ./header.pug
+form(action='/matches-submit' method='POST')
+  fieldset
+    legend Returning User: 
+    .form-data
+      label
+        strong Name:
+      input(type='text' size='16' name='name')
+    input(type='submit' value='View my Matches')

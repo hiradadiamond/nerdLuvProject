@@ -1,0 +1,40 @@
+doctype html
+head
+  title NerdLuv
+  meta(charset='utf-8')
+  link(href='/images/heart.gif' type='image/gif' rel='shortcut icon')
+  link(href='css/nerdluv.css' type='text/css' rel='stylesheet')
+include ./header.pug
+div
+  ul
+    each item in data
+      li
+        .match-data
+          img.usersimg(src='images/user.jpg' alt='user')
+          table
+            th Matches User
+            tr
+              td
+                strong Name 
+                span=item.name
+              td
+            tr
+              td
+                strong Gender
+                span=item.gender
+              td
+            tr
+              td
+                strong Age 
+                span=item.age
+              td
+            tr
+              td
+                strong Personality Type
+                span=item.type
+              td
+            tr
+              td
+                strong Favorite Os
+                span=item.os
+              td
